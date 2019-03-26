@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bacground_1">
+
+    <TextView
+        android:id="@+id/textView3_username"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/login_textView2_username_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4_password"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/login_textView4_password_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3_username" />
+
+    <EditText
+        android:id="@+id/editText3_username"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:drawable/editbox_background"
+        android:fontFamily="monospace"
+        android:hint="@string/login_editText3_username_hint"
+        android:maxLength="11"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toEndOf="@+id/textView3_username"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText3_password"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/login_editText3_password_hint"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toEndOf="@+id/textView4_password"
+        app:layout_constraintTop_toBottomOf="@+id/editText3_username" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_remember_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginLeft="216dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/login_checkBox_remember_password_text"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3_password" />
+
+    <TextView
+        android:id="@+id/textView_tip"
+        android:layout_width="352dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/login_textView_tip_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_remember_password" />
+
+    <ImageButton
+        android:id="@+id/imageButton_login"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="68dp"
+        android:background="@mipmap/button_login_press"
+        android:contentDescription="@string/login_imageButton_login_contentDescription"
+        android:scaleType="fitXY"
+        android:src="@mipmap/button_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tip" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/login_icon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="188dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="29dp"
+        android:text="SIGN-IN SYSTEM"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+</android.support.constraint.ConstraintLayout>

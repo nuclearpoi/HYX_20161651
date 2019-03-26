@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.henu.swface"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+//        packagingOptions {
+//            exclude 'META-INF/DEPENDENCIES'
+////            exclude 'META-INF/NOTICE'
+//            exclude 'META-INF/LICENSE'
+////            exclude 'META-INF/LICENSE.txt'
+////            exclude 'META-INF/NOTICE.txt'
+////            exclude 'META-INF/ASL2.0'
+////            exclude 'META-INF/notice.txt'
+//        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api files('libs/converter-gson-2.1.0.jar')
+    api files('libs/eyekey-sdk_2.2.jar')
+    api files('libs/gson-2.7.jar')
+    api files('libs/okhttp-3.4.1.jar')
+    api files('libs/okio-1.9.0.jar')
+    api files('libs/retrofit-2.1.0.jar')
+    api files('libs/FaceppSDK.jar')
+    api files('libs/org.apache.http.legacy.jar')
+    api files('libs/BmobSDK_3.5.3_20161116.jar')
+    api files('libs/rxandroid-1.2.0.jar')
+    api files('libs/rxjava-1.1.6.jar')
+    api 'com.android.support:appcompat-v7:24.2.1'
+    api 'com.android.support:recyclerview-v7:24.2.1'
+    api 'com.android.support.constraint:constraint-layout:1.0.1'
+    testImplementation 'junit:junit:4.12'
+}

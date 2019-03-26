@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Face recognition sign-in system</string>
+    <string name="main_txt_title">Face recognition sign-in system</string>
+    <string name="button_sign_in">Check in</string>
+    <string name="button_register">Register new student</string>
+    <string name="login_textView2_username_text">Tel:</string>
+    <string name="login_editText3_username_hint">11 mainland China mobile phone number</string>
+    <string name="login_editText3_password_hint">Combination of letters and numbers</string>
+    <string name="login_checkBox_remember_password_text">Remember Password</string>
+    <string name="login_textView_tip_text">Tips: If the mobile phone number has not been registered, it will be automatically registered for you.</string>
+    <string name="login_imageButton_login_contentDescription">Log In</string>
+    <string name="login_textView4_password_text">Password:</string>
+    <string name="button_manage">Manage registered users:</string>
+    <string name="recycleView_textView_face_name_text">Name：</string>
+    <string name="recycleView_textView_register_time_text">Registration time：</string>
+    <string name="imageview_face_detail_head">imageView_face_detail_head</string>
+    <string name="textView_face_detail_register_time_text">Registration time：</string>
+    <string name="button_face_detail_text">Edit</string>
+    <string name="textView_tips_text">Tips：</string>
+    <string name="textView_face_detail_tip1">1.Multiple images help to improve sign-in success rate！</string>
+    <string name="textView_face_detail_tip2">2.Up to 5 images can be stored per person in the face database</string>
+    <string name="menu_item_about">About</string>
+    <string name="button_face_detail_edit">button_face_detail_edit</string>
+    <string name="menu_item_delete_user">Delete</string>
+
+    <string name="cube_ptr_pull_down">Let the pull down</string>
+    <string name="cube_ptr_pull_down_to_refresh">Pull down to refresh</string>
+    <string name="cube_ptr_release_to_refresh">Release immediate refresh</string>
+    <string name="cube_ptr_refreshing">Updating list…</string>
+    <string name="cube_ptr_refresh_complete">Refresh successfully</string>
+
+    <string name="cube_ptr_last_update">Last updated:&#160;</string>
+    <string name="cube_ptr_seconds_ago">&#160;秒之前</string>
+    <string name="cube_ptr_minutes_ago">&#160;分钟之前</string>
+    <string name="cube_ptr_hours_ago">&#160;小时之前</string>
+    <string name="button_sign_log">查看签到记录</string>
+</resources>
